@@ -31,20 +31,33 @@ const translations = {
     "en": {
         "All_Student": "All Student",
         "Reg_std": "Register Student",
-        
+        "register": "Register",
+        "Student_Name":"Student Name",
+        "Father_Name":"Father Name",
+        "Mother_Name":"Mother Name",
+        "Gender":"Gender",
     },
 
     // Hindi translations
     "hindi": {
         "All_Student": "सभी छात्र",
         "Reg_std": "छात्र पंजीकृत करें",
+        "register": "पंजीकृत",
+        "Student_Name":"छात्र का नाम",
+        "Father_Name":"पिता का नाम",
+        "Student_Name":"माँ का नाम",
+        "Gender":"लिंग",
     },
 
     // Arabic translations
     "ar": {
         "All_Student": "كل الطلاب",
         "Reg_std": "سجل الطالب",
-
+        "register": "يسجل",
+        "Student_Name":"أسم الطالب",
+        "Father_Name":"اسم الأب",
+        "Mother_Name":"اسم الأم",
+        "Gender":"جنس",
     },
 };
 

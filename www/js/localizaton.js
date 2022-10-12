@@ -45,7 +45,7 @@ const translations = {
         "register": "पंजीकृत",
         "Student_Name":"छात्र का नाम",
         "Father_Name":"पिता का नाम",
-        "Student_Name":"माँ का नाम",
+        "Mother_Name":"माँ का नाम",
         "Gender":"लिंग",
     },
 

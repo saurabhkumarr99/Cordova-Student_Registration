@@ -18,9 +18,10 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!--
+
+<head>
+    <meta charset="utf-8">
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
             https://cordova.apache.org/docs/en/latest/
         Some notes:
@@ -28,48 +29,44 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/index2.css">
-        <title>Student Registration</title>
-    </head>
-    <body>
-        <!DOCTYPE html>
-        <html lang="en">
-        
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index2.css">
+    <title>Student Registration</title>
 
-            <script src="cordova.js"></script>
-            <script src="js/index.js"></script>
-    
-            <script src="js/jquery-min.js"></script>
-            <script src="js/Underscore.js"></script>
-            <script src="js/backbone-min.js"></script>
-        
-            <script src="js/model.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
 
-            <!-- updated code -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/Underscore.js"></script>
+    <script src="js/backbone-min.js"></script>
 
-        </head>
-        
-        <body>
-        
-           <header>
+    <script src="js/model.js"></script>
+    <script src="js/localizaton.js"></script>
+
+</head>
+
+<body>
+    <header>
         <h1>Backbone js</h1>
+        <div id="language_box">
+            Language : <select name="language" id="language" style="font-size: 20px;">
+                <option value="English" type="button">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Arab">Arab</option>
+            </select>
+        </div>
     </header>
     <section>
 
         <div class="navbar">
-            <button id="Register_Student">Register Student</button>
-            <button id="All_Student">All Student</button>
+            <button id="Register_Student" data-lang="Reg_std">Register Student</button><br>
+            <button id="All_Student"data-lang="All_Student">All Student</button>
         </div>
 
         <div class="container" id="container1">
@@ -86,9 +83,9 @@
         <div id="msg"></div>
 
         <div class="container" id="container2">
-           
-        </div>
 
+        </div>
     </section>
-    </body>
+</body>
+
 </html>

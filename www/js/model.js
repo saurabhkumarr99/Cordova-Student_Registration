@@ -6,9 +6,14 @@ $(document).ready(function () {
 
     $('#Create_Student_Model').click(Create_Student_Model);
 
+    $('#language').change(language);
+
 });
 
-
+function language() {
+    var lan = $("#language option:selected").val();
+    localization(lan);
+}
 
 var collection = Backbone.Collection.extend();
 var Student_collection = new collection([]);
@@ -67,12 +72,16 @@ function display(Student_collection) {
         div.appendChild(txt);
         var button1 = document.createElement("button");
         button1.innerHTML = ("Update");
-        button1.setAttribute("onclick", "update(" + index + ")");
+        button1.addEventListener("click", function () {
+            update(index);
+        });
         div.appendChild(button1);
 
         var button2 = document.createElement("button");
         button2.innerHTML = ("Delete");
-        button2.setAttribute("onclick", "dlt(" + index + ")");
+        button2.addEventListener("click", function () {
+            dlt(index);
+        });
         button2.style.backgroundColor = "#c64343";
         div.appendChild(button2);
 
@@ -107,7 +116,9 @@ function update(id) {
 
     var btn4 = document.getElementById("update_student");
     btn4.style.display = "inline";
-    btn4.setAttribute("onclick", "update_student(" + id + ")");
+    btn4.addEventListener("click", function () {
+        update_student(id);
+    });
     btn4.style.backgroundColor = "green";
 
 }
